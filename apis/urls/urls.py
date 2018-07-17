@@ -8,8 +8,8 @@ from rest_framework import routers
 from test_api.views import TestApiViewSet
 
 router = routers.DefaultRouter(trailing_slash=False)
-router.register('test_apis', TestApiViewSet)
+router.register('test_apis', TestApiViewSet,base_name="test_api_v0")
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('v0/', include(router.urls))
 ]

@@ -4,10 +4,10 @@ __date__ = '2018/7/16 16:24'
 
 from rest_framework import serializers
 
-from .models import TestApiModel
+from ..models import TestApiModel
 
-class TestApiSerializer(serializers.ModelSerializer):
+class TestApiSerializer_v1(serializers.ModelSerializer):
 
     class Meta:
         model=TestApiModel
-        fields="__all__"
+        fields=('id','name')

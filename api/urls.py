@@ -21,5 +21,6 @@ urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('doc/',include_docs_urls(title="Huu Api")),
-    path('', include('apis.urls'))
+    path('', include('apis.urls.urls')),
+    path('', include('apis.urls.urls_v1'))
 ]
