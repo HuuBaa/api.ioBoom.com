@@ -18,6 +18,5 @@ class TestApiViewSet(ModelViewSet):
     ordering_fields=('numbers','time')
     search_fields=('content','name')
 
-
 class TestApiViewSet_v1(TestApiViewSet):
     serializer_class = TestApiSerializer_v1
