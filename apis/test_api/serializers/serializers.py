@@ -6,8 +6,8 @@ from rest_framework import serializers
 
 from ..models import TestApiModel
 
-class TestApiSerializer(serializers.ModelSerializer):
 
+class TestApiSerializer(serializers.ModelSerializer):
     class Meta:
-        model=TestApiModel
-        fields="__all__"
+        model = TestApiModel
+        fields = "__all__"
