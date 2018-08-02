@@ -16,11 +16,16 @@ Including another URLconf
 import xadmin
 from rest_framework.documentation import include_docs_urls
 from django.urls import path, include, re_path
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('doc/',include_docs_urls(title="Huu Api")),
-    path('', include('apis.urls.urls')),
-    path('', include('apis.urls.urls_v1'))
+    path('', include('apis.urls')),
+    path('', include('apis.urls_v1'))
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

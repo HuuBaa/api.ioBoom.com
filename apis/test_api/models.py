@@ -1,5 +1,9 @@
+from django.contrib.auth.models import AbstractUser
+
+
 from django.db import models
 from datetime import datetime
+
 # Create your models here.
 class TestApiModel(models.Model):
     id=models.IntegerField(verbose_name="id",help_text="id",primary_key=True)
@@ -14,3 +18,5 @@ class TestApiModel(models.Model):
     class Meta:
         verbose_name="测试apiModel"
         verbose_name_plural=verbose_name
+
+
