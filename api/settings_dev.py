@@ -139,3 +139,14 @@ AUTH_USER_MODEL="users.UserProfile"
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.ioboom.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'ioboom@ioboom.com'
+EMAIL_HOST_PASSWORD = os.environ.get('ALI_MAIL_PASSWD')
+EMAIL_FROM = 'ioBoom.com<ioboom@ioboom.com>'
+
+#send_mail('subject la','body is me','postmaster@ioboom.com',['742790905@qq.com'])
