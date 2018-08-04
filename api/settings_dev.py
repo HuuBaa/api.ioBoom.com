@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     'test_api.apps.TestApiConfig',
     'users.apps.UsersConfig',
@@ -45,6 +46,11 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'django_filters',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.weibo',
+    'allauth.socialaccount.providers.github'
 ]
 
 MIDDLEWARE = [
@@ -127,12 +133,39 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
+AUTHENTICATION_BACKENDS=(
+    'users.views.CustomBackend',
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+SITE_ID = 1
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+LOGIN_REDIRECT_URL='/doc/'
+
+#JWT登录
+import datetime
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+}
+
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
+
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    #'DEFAULT_PERMISSION_CLASSES': [
-    #    'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    # ]
+    # 权限认证
+    'DEFAULT_PERMISSION_CLASSES': (
+        #'rest_framework.permissions.IsAuthenticated',
+    ),
+    # 身份验证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
 }
 
 AUTH_USER_MODEL="users.UserProfile"
@@ -147,6 +180,6 @@ EMAIL_HOST = 'smtp.ioboom.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'ioboom@ioboom.com'
 EMAIL_HOST_PASSWORD = os.environ.get('ALI_MAIL_PASSWD')
-EMAIL_FROM = 'ioBoom.com<ioboom@ioboom.com>'
+EMAIL_FROM = 'ioBoom.com管理员<ioboom@ioboom.com>'
+DEFAULT_FROM_EMAIL =EMAIL_FROM
 
-#send_mail('subject la','body is me','postmaster@ioboom.com',['742790905@qq.com'])

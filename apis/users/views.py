@@ -4,12 +4,23 @@ from rest_framework.mixins import ListModelMixin,RetrieveModelMixin,CreateModelM
 from rest_framework.response import Response
 from rest_framework import status
 from django.core.mail import send_mail
+from django.contrib.auth.backends import ModelBackend
+from django.db.models import Q
 
 import random
 from .models import UserProfile,VerifyCode
 from .serializers.serializer_v1 import UserUpdateSerializer,UserProfileSerializer,UserRegisterSerializer,VerifyCodeSerializer
 from .permissions import IsOwnerOrReadOnly
 # Create your views here.
+
+class CustomBackend(ModelBackend):
+    def authenticate(self, request, username=None, password=None, **kwargs):
+        try:
+            user=UserProfile.objects.get(Q(username=username)|Q(email=username))
+            if user.check_password(password) and self.user_can_authenticate(user):
+                return user
+        except Exception as e:
+            return None
 
 class UserProfileViewSet_v1(GenericViewSet,ListModelMixin,RetrieveModelMixin,CreateModelMixin,UpdateModelMixin):
     """

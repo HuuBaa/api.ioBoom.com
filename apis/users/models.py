@@ -8,7 +8,7 @@ class UserProfile(AbstractUser):
     用户
     """
     email = models.EmailField(blank=True, null=True,verbose_name="电子邮箱",help_text="电子邮箱")
-    avatar = models.ImageField(blank=True, null=True,upload_to="avatar/",verbose_name="头像",help_text="头像")
+    avatar = models.ImageField(blank=True, null=True,upload_to="avatar/",default="avatar/default.png",verbose_name="头像",help_text="头像")
     age = models.IntegerField(blank=True, null=True,verbose_name="年龄",help_text="年龄")
     birthday = models.DateField(blank=True, null=True,verbose_name="生日",help_text="生日")
     website = models.URLField(blank=True, null=True,verbose_name="个人网站",help_text="个人网站")

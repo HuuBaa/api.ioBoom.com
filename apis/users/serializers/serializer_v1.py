@@ -10,9 +10,16 @@ from ..models import UserProfile,VerifyCode
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
+    avatar_url=serializers.SerializerMethodField()
+
     class Meta:
         model=UserProfile
-        fields=('id','username','email','avatar','age','birthday','website','hometown','introduction')
+        fields=('id','username','email','avatar','age','birthday','website','hometown','introduction','avatar_url')
+
+    def get_avatar_url(self,user):
+        if user.socialaccount_set.count():
+            return user.socialaccount_set.all()[0].get_avatar_url()
+        return ""
 
 
 class UserUpdateSerializer(serializers.ModelSerializer):

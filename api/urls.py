@@ -14,17 +14,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 import xadmin
+from django.contrib import admin
 from rest_framework.documentation import include_docs_urls
 from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
+    path('admin/',admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('doc/',include_docs_urls(title="Huu Api")),
     path('', include('apis.urls')),
-    path('', include('apis.urls_v1'))
+    path('', include('apis.urls_v1')),
+    path('api-jwt-auth/',obtain_jwt_token),
+    path(r'accounts/', include('allauth.urls')),
 ]
 
 if settings.DEBUG:
