@@ -9,6 +9,28 @@ from datetime import datetime,timedelta
 from ..models import UserProfile,VerifyCode
 
 
+
+class UserJWTSerializer(serializers.ModelSerializer):
+    """
+    JWT返回数据的serializer
+    """
+    avatar_url = serializers.SerializerMethodField()
+    class Meta:
+        model=UserProfile
+        fields=('username','avatar','avatar_url')
+    def get_avatar_url(self,user):
+        if user.socialaccount_set.count():
+            return user.socialaccount_set.all()[0].get_avatar_url()
+        return ""
+
+def jwt_response_payload_handler(token, user=None, request=None):
+        return {
+            'token': token,
+            'user': UserJWTSerializer(user, context={'request': request}).data
+        }
+
+
+
 class UserProfileSerializer(serializers.ModelSerializer):
     avatar_url=serializers.SerializerMethodField()
 

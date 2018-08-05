@@ -2,14 +2,16 @@ from django.shortcuts import render
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.mixins import ListModelMixin,RetrieveModelMixin,CreateModelMixin,UpdateModelMixin
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import status,pagination
+from rest_framework_jwt.serializers import jwt_payload_handler,jwt_encode_handler
+
 from django.core.mail import send_mail
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 
 import random
 from .models import UserProfile,VerifyCode
-from .serializers.serializer_v1 import UserUpdateSerializer,UserProfileSerializer,UserRegisterSerializer,VerifyCodeSerializer
+from .serializers.serializer_v1 import UserUpdateSerializer,UserProfileSerializer,UserRegisterSerializer,VerifyCodeSerializer,UserJWTSerializer
 from .permissions import IsOwnerOrReadOnly
 # Create your views here.
 
@@ -35,8 +37,9 @@ class UserProfileViewSet_v1(GenericViewSet,ListModelMixin,RetrieveModelMixin,Cre
     update:
         更新用户资料
     """
-    queryset = UserProfile.objects.all()
+    queryset = UserProfile.objects.order_by("-id").all()
     permission_classes = (IsOwnerOrReadOnly,)
+    #pagination_class = pagination.LimitOffsetPagination
     def get_serializer_class(self):
         if self.action=='create':
             return UserRegisterSerializer
@@ -44,7 +47,29 @@ class UserProfileViewSet_v1(GenericViewSet,ListModelMixin,RetrieveModelMixin,Cre
             return UserUpdateSerializer
         return UserProfileSerializer
 
+    def perform_create(self, serializer):
+        return serializer.save()
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        #注册成功后返回token和user信息
+        user=self.perform_create(serializer)
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+
+        res_dict=serializer.data
+        res_dict["user"]=UserJWTSerializer(user, context={'request': request}).data
+        res_dict["token"]=token
+
+        headers = self.get_success_headers(serializer.data)
+        return Response(res_dict, status=status.HTTP_201_CREATED, headers=headers)
+
+
 class VerifyCodeViewSet_v1(GenericViewSet,CreateModelMixin):
+    """
+    邮箱验证码
+    """
     serializer_class = VerifyCodeSerializer
 
     def gen_code(self):
@@ -70,7 +95,7 @@ class VerifyCodeViewSet_v1(GenericViewSet,CreateModelMixin):
         code_record = VerifyCode(code=code, email=serializer.validated_data["email"])
         code_record.save()
         return Response({
-            "email": code_record.email
+            "email": code_record.email,
         }, status=status.HTTP_201_CREATED)
 
 

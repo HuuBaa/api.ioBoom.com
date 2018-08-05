@@ -1,16 +1,585 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/apis/users/serializers/serializer_v1.py" line="12" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b0af70cf-1067-423a-b545-f8e4ce562ea7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/avatar/default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/users/migrations/0005_userprofile_avatar_url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/articles/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/articles/adminx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/articles/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/articles/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/articles/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/articles/serializers/serializer_v1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/articles/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apis/users/migrations/0006_auto_20180805_1906.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/adapter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/app_settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/auth_backends.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/decorators.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/management/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/management/commands/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/management/commands/account_unsetmultipleprimaryemails.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/managers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/migrations/0002_email_max_length.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/signals.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/templatetags/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/templatetags/account.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/account/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/app_settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/ar/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/cs/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/de/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/el/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/en/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/es/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/fa/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/fi/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/fr/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/he/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/hr/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/hu/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/it/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/ja/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/ko/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/ky/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/lt/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/lv/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/nl/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/no/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/pl/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/pt_BR/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/pt_PT/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/ru/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/sk/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/sv/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/th/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/tr/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/uk/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/zh_CN/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/zh_Hans/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/zh_Hant/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/locale/zh_TW/LC_MESSAGES/django.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/adapter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/app_settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/fields.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/helpers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/migrations/0002_token_max_lengths.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/migrations/0003_extra_data_default_dict.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/amazon/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/amazon/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/amazon/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/amazon/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/amazon/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/angellist/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/angellist/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/angellist/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/angellist/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/angellist/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/asana/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/asana/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/asana/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/asana/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/asana/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/asana/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/auth0/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/auth0/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/auth0/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/auth0/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/auth0/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/authentiq/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/authentiq/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/authentiq/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/authentiq/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/authentiq/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/azure/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/azure/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/azure/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/azure/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/azure/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/azure/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/baidu/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/baidu/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/baidu/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/baidu/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/baidu/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/basecamp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/basecamp/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/basecamp/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/basecamp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/basecamp/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/battlenet/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/battlenet/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/battlenet/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/battlenet/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/battlenet/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/battlenet/validators.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/battlenet/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket_oauth2/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket_oauth2/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket_oauth2/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket_oauth2/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitbucket_oauth2/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitly/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitly/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitly/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitly/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/bitly/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/box/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/box/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/box/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/box/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/box/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/coinbase/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/coinbase/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/coinbase/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/coinbase/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/coinbase/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dataporten/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dataporten/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dataporten/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dataporten/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dataporten/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dataporten/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/daum/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/daum/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/daum/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/daum/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/daum/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/daum/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/digitalocean/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/digitalocean/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/digitalocean/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/digitalocean/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/digitalocean/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/discord/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/discord/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/discord/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/discord/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/discord/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/douban/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/douban/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/douban/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/douban/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/douban/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/doximity/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/doximity/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/doximity/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/doximity/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/doximity/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/draugiem/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/draugiem/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/draugiem/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/draugiem/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/draugiem/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dropbox/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dropbox/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dropbox/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dropbox/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dropbox/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dwolla/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dwolla/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dwolla/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dwolla/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dwolla/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/dwolla/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/edmodo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/edmodo/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/edmodo/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/edmodo/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/edmodo/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eventbrite/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eventbrite/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eventbrite/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eventbrite/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eventbrite/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eveonline/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eveonline/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eveonline/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eveonline/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/eveonline/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/evernote/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/evernote/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/evernote/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/evernote/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/evernote/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/data/FacebookLocales.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/locale.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/static/facebook/js/fbconnect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/templates/facebook/fbconnect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/facebook/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/feedly/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/feedly/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/feedly/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/feedly/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/feedly/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fivehundredpx/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fivehundredpx/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fivehundredpx/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fivehundredpx/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fivehundredpx/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fivehundredpx/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/flickr/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/flickr/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/flickr/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/flickr/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/flickr/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/foursquare/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/foursquare/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/foursquare/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/foursquare/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/foursquare/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fxa/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fxa/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fxa/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fxa/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fxa/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/fxa/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/github/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/github/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/github/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/github/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/github/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/gitlab/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/gitlab/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/gitlab/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/gitlab/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/gitlab/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/google/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/google/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/google/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/google/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/google/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/hubic/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/hubic/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/hubic/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/hubic/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/hubic/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/instagram/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/instagram/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/instagram/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/instagram/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/instagram/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/kakao/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/kakao/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/kakao/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/kakao/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/kakao/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/kakao/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/line/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/line/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/line/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/line/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/line/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/line/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin_oauth2/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin_oauth2/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin_oauth2/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin_oauth2/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/linkedin_oauth2/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailchimp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailchimp/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailchimp/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailchimp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailchimp/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailru/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailru/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailru/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailru/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/mailru/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/meetup/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/meetup/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/meetup/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/meetup/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/meetup/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/meetup/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/microsoft/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/microsoft/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/microsoft/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/microsoft/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/microsoft/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/microsoft/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/naver/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/naver/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/naver/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/naver/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/naver/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/naver/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth2/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth2/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth2/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth2/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/oauth2/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/odnoklassniki/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/odnoklassniki/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/odnoklassniki/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/odnoklassniki/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/odnoklassniki/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/openid/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/orcid/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/orcid/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/orcid/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/orcid/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/orcid/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/patreon/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/patreon/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/patreon/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/patreon/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/patreon/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/patreon/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/paypal/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/paypal/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/paypal/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/paypal/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/paypal/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/persona/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/persona/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/persona/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/persona/templates/persona/auth.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/persona/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/persona/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/persona/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/pinterest/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/pinterest/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/pinterest/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/pinterest/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/pinterest/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/quickbooks/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/quickbooks/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/quickbooks/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/quickbooks/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/quickbooks/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/quickbooks/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/reddit/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/reddit/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/reddit/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/reddit/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/reddit/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/robinhood/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/robinhood/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/robinhood/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/robinhood/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/robinhood/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/salesforce/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/salesforce/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/salesforce/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/salesforce/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/salesforce/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/shopify/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/shopify/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/shopify/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/shopify/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/shopify/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/slack/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/slack/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/slack/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/slack/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/slack/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/slack/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/soundcloud/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/soundcloud/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/soundcloud/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/soundcloud/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/soundcloud/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/spotify/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/spotify/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/spotify/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/spotify/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/spotify/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stackexchange/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stackexchange/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stackexchange/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stackexchange/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stackexchange/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stripe/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stripe/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stripe/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stripe/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/stripe/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/telegram/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/telegram/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/telegram/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/telegram/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/trello/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/trello/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/trello/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/trello/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/trello/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/tumblr/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/tumblr/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/tumblr/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/tumblr/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/tumblr/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twentythreeandme/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twentythreeandme/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twentythreeandme/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twentythreeandme/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twentythreeandme/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitch/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitch/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitch/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitch/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitch/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitter/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitter/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitter/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitter/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/twitter/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/untappd/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/untappd/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/untappd/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/untappd/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/untappd/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/untappd/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vimeo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vimeo/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vimeo/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vimeo/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vimeo/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vk/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vk/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vk/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vk/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/vk/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weibo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weibo/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weibo/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weibo/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weibo/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weixin/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weixin/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weixin/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weixin/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weixin/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/weixin/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/windowslive/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/windowslive/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/windowslive/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/windowslive/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/windowslive/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/xing/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/xing/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/xing/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/xing/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/xing/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/yahoo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/yahoo/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/yahoo/provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/yahoo/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/yahoo/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/providers/yahoo/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/signals.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/templatetags/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/templatetags/socialaccount.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/socialaccount/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/account_inactive.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email/email_confirmation_message.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email/email_confirmation_signup_message.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email/email_confirmation_signup_subject.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email/email_confirmation_subject.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email/password_reset_key_message.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email/password_reset_key_subject.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/email_confirm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/logout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/cannot_delete_primary_email.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/email_confirmation_sent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/email_confirmed.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/email_deleted.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/logged_in.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/logged_out.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/password_changed.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/password_set.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/primary_email_set.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/messages/unverified_primary_email.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/password_change.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/password_reset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/password_reset_done.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/password_reset_from_key.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/password_reset_from_key_done.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/password_set.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/signup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/signup_closed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/snippets/already_logged_in.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/verification_sent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/account/verified_email_required.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/openid/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/openid/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/authentication_error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/connections.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/login_cancelled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/messages/account_connected.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/messages/account_connected_other.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/messages/account_disconnected.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/signup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/snippets/login_extra.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/templates/socialaccount/snippets/provider_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extra_apps/allauth/utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/settings_dev.py" afterPath="$PROJECT_DIR$/api/settings_dev.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/urls.py" afterPath="$PROJECT_DIR$/api/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/test_api/views.py" afterPath="$PROJECT_DIR$/apis/test_api/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/users/models.py" afterPath="$PROJECT_DIR$/apis/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/urls_v1.py" afterPath="$PROJECT_DIR$/apis/urls_v1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/users/serializers/serializer_v1.py" afterPath="$PROJECT_DIR$/apis/users/serializers/serializer_v1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/users/signals.py" afterPath="$PROJECT_DIR$/apis/users/signals.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apis/users/views.py" afterPath="$PROJECT_DIR$/apis/users/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +600,42 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apis/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="44">
+              <caret line="19" column="32" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializer_v1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apis/users/serializers/serializer_v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <element signature="e#72#111#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apis/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="974">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apis/articles/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="69" column="71" lean-forward="false" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="71" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -40,35 +643,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signals.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apis/users/signals.py">
+      <file leaf-file-name="serializer_v1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apis/articles/serializers/serializer_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding>
-                <element signature="e#72#118#0" expanded="true" />
+                <element signature="e#72#110#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/settings.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apis/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2699">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serializer_v1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apis/users/serializers/serializer_v1.py">
+      <file leaf-file-name="urls_v1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apis/urls_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="432">
               <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <element signature="e#72#111#0" expanded="true" />
+                <element signature="e#73#110#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apis/articles/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,6 +714,9 @@
       <find>id</find>
       <find>session</find>
       <find>get</find>
+      <find>context</find>
+      <find>MAP</find>
+      <find>l</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,7 +734,6 @@
         <option value="$PROJECT_DIR$/a.txt" />
         <option value="$PROJECT_DIR$/api/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/apis/urls.py" />
         <option value="$PROJECT_DIR$/apis_v1/urls.py" />
         <option value="$PROJECT_DIR$/apis/test_api/views/views_v1.py" />
         <option value="$PROJECT_DIR$/apis/test_api/views/views.py" />
@@ -118,17 +745,27 @@
         <option value="$PROJECT_DIR$/apis/test_api/models.py" />
         <option value="$PROJECT_DIR$/apis/users/apps.py" />
         <option value="$PROJECT_DIR$/api/test_email.py" />
-        <option value="$PROJECT_DIR$/apis/urls_v1.py" />
         <option value="$PROJECT_DIR$/apis/users/adminx.py" />
         <option value="$PROJECT_DIR$/apis/users/admin.py" />
         <option value="$PROJECT_DIR$/apis/users/permissions.py" />
         <option value="$PROJECT_DIR$/apis/test_api/views.py" />
-        <option value="$PROJECT_DIR$/apis/users/views.py" />
         <option value="$PROJECT_DIR$/api/urls.py" />
-        <option value="$PROJECT_DIR$/api/settings_dev.py" />
         <option value="$PROJECT_DIR$/apis/users/models.py" />
-        <option value="$PROJECT_DIR$/apis/users/serializers/serializer_v1.py" />
         <option value="$PROJECT_DIR$/apis/users/signals.py" />
+        <option value="$PROJECT_DIR$/extra_apps/allauth/templates/account/account_inactive.html" />
+        <option value="$PROJECT_DIR$/extra_apps/allauth/templates/account/login.html" />
+        <option value="$PROJECT_DIR$/apis/users/serializers/serializer_v1.py" />
+        <option value="$USER_HOME$/Desktop/cf.py" />
+        <option value="$PROJECT_DIR$/apis/users/views.py" />
+        <option value="$PROJECT_DIR$/apis/articles/xadmin.py" />
+        <option value="$PROJECT_DIR$/apis/articles/apps.py" />
+        <option value="$PROJECT_DIR$/api/settings_dev.py" />
+        <option value="$PROJECT_DIR$/apis/articles/adminx.py" />
+        <option value="$PROJECT_DIR$/apis/articles/models.py" />
+        <option value="$PROJECT_DIR$/apis/urls_v1.py" />
+        <option value="$PROJECT_DIR$/apis/articles/serializers/serializer_v1.py" />
+        <option value="$PROJECT_DIR$/apis/urls.py" />
+        <option value="$PROJECT_DIR$/apis/articles/views.py" />
       </list>
     </option>
   </component>
@@ -139,10 +776,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="605" />
-    <option name="y" value="4" />
-    <option name="width" value="1708" />
-    <option name="height" value="929" />
+    <option name="x" value="822" />
+    <option name="y" value="24" />
+    <option name="width" value="1657" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -176,7 +813,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,13 +834,13 @@
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="apis" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="articles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="apis" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="articles" type="462c0819:PsiDirectoryNode" />
               <item name="serializers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -212,6 +848,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,11 +870,11 @@
       <recent name="F:\api\apis\test_api\serializers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\api\extra_apps" />
       <recent name="F:\api\media\avatar" />
       <recent name="F:\api\apis\users" />
       <recent name="F:\api\apis\test_api\views" />
       <recent name="F:\api\apis\test_api\serializers" />
-      <recent name="F:\api\apis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -327,22 +964,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="605" y="4" width="1708" height="929" extended-state="0" />
+    <frame x="822" y="24" width="1657" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994187" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32522407" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22007722" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3202033" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22363405" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22323601" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30424243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22278482" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1839297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@api" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34571064" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14773433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@api" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34491634" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2535316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25686812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25611326" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -386,196 +1023,222 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://F:/myproject/api_env/Lib/site-packages/rest_framework/urls.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/views.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/templates/account/email.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="479" column="0" lean-forward="false" selection-start-line="479" selection-start-column="0" selection-end-line="479" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/test_email.py" />
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/serializers.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/templates/account/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="845" column="6" lean-forward="false" selection-start-line="845" selection-start-column="6" selection-end-line="845" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/users/admin.py" />
-    <entry file="file://$PROJECT_DIR$/apis/users/adminx.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/core/mail/__init__.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/templates/account/snippets/already_logged_in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-889">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="132">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/users/apps.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/account/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="-494">
+          <caret line="88" column="6" lean-forward="false" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/contrib/auth/models.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/templates/account/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6094">
-          <caret line="287" column="6" lean-forward="false" selection-start-line="287" selection-start-column="6" selection-end-line="287" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/core/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="180" column="8" lean-forward="false" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="157">
+          <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/users/permissions.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/account/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="805" column="0" lean-forward="true" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/urls_v1.py">
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/account/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#73#110#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/contrib/auth/backends.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework_jwt/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/social_core/backends/github.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/__init__.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework_jwt/authentication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
+        <state relative-caret-position="-924">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/contrib/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="127" column="6" lean-forward="false" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="22">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/apps/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/apps/registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework_jwt/compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-466">
+          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/sites.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7612">
-          <caret line="338" column="8" lean-forward="false" selection-start-line="338" selection-start-column="8" selection-end-line="338" selection-end-column="8" />
+        <state relative-caret-position="227">
+          <caret line="563" column="0" lean-forward="false" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/social_django/urls.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/contrib/auth/base_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        <state relative-caret-position="183">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/social_django/views.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework_jwt/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        <state relative-caret-position="262">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="479" column="0" lean-forward="false" selection-start-line="479" selection-start-column="0" selection-end-line="479" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/social_core/actions.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/views/generic/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        <state relative-caret-position="183">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/account/models.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/views/decorators/csrf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/allauth/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/db/models/signals.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework_jwt/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="44">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework_jwt/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/account/__init__.py">
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework_jwt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="11" column="72" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/wsgiref/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/cf.py" />
+    <entry file="file://$PROJECT_DIR$/apis/test_api/serializers/serializers_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -583,228 +1246,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/__init__.py">
+    <entry file="file://$PROJECT_DIR$/apis/test_api/serializers/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/dispatch/dispatcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/socialaccount/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/socialaccount/signals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/settings_dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apis/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apis/test_api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apis/test_api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="418">
+          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6402">
+          <caret line="308" column="27" lean-forward="false" selection-start-line="308" selection-start-column="6" selection-end-line="308" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="188" column="4" lean-forward="false" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/users/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/urls.py">
+    <entry file="file://$PROJECT_DIR$/apis/articles/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+        <state relative-caret-position="66">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/settings_dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="49" column="14" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/users/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/articles/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#627#640#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="1828" column="8" lean-forward="false" selection-start-line="1828" selection-start-column="8" selection-end-line="1828" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/socialaccount/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="109" column="41" lean-forward="true" selection-start-line="109" selection-start-column="41" selection-end-line="109" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/templates/socialaccount/messages/account_connected.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/templates/socialaccount/messages/account_disconnected.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/socialaccount/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/templates/socialaccount/messages/account_connected_other.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/account/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/templates/account/password_reset.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/templates/openid/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/myproject/api_env/Lib/site-packages/allauth/templates/openid/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2699">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apis/users/signals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#72#118#0" expanded="true" />
+            <element signature="e#72#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apis/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="44">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/users/serializers/serializer_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#72#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/relations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="271" column="8" lean-forward="false" selection-start-line="271" selection-start-column="8" selection-end-line="271" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404">
+          <caret line="1577" column="6" lean-forward="false" selection-start-line="1577" selection-start-column="6" selection-end-line="1577" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/articles/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="69" column="71" lean-forward="false" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="71" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/users/serializers/serializer_v1.py">
+    <entry file="file://$PROJECT_DIR$/apis/urls_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="432">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#72#111#0" expanded="true" />
+            <element signature="e#73#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/articles/serializers/serializer_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding>
+            <element signature="e#72#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/myproject/api_env/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/articles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'test_api.apps.TestApiConfig',
     'users.apps.UsersConfig',
+    'articles.apps.ArticlesConfig',
 
     'rest_framework',
     'xadmin',
@@ -145,11 +146,13 @@ ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 LOGIN_REDIRECT_URL='/doc/'
 
+
 #JWT登录
 import datetime
 JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'JWT',
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+    'JWT_RESPONSE_PAYLOAD_HANDLER':'users.serializers.serializer_v1.jwt_response_payload_handler'
 }
 
 
@@ -166,7 +169,10 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
+    'DEFAULT_PAGINATION_CLASS':'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE':10
 }
+
 
 AUTH_USER_MODEL="users.UserProfile"
 
