@@ -26,7 +26,7 @@ SECRET_KEY = '9rk04-jbq^e1n*23@dqh3934p@9q02o1^)d229*h*erw(8c%lw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -37,12 +37,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+
+    'test_api.apps.TestApiConfig',
+    'users.apps.UsersConfig',
+    'articles.apps.ArticlesConfig',
+
     'rest_framework',
     'xadmin',
     'crispy_forms',
     'django_filters',
-
-    'test_api.apps.TestApiConfig'
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.weibo',
+    'allauth.socialaccount.providers.github'
 ]
 
 MIDDLEWARE = [
@@ -92,18 +101,6 @@ DATABASES = {
    }
 }
 
-#
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'api',
-#         'USER':'root',
-#         'PASSWORD':'password',
-#         'HOST':'127.0.0.1',
-#         'OPTIONS':{'init_command':'SET default_storage_engine=INNODB;' }
-#     }
-# }
-
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -140,11 +137,60 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+AUTHENTICATION_BACKENDS=(
+    'users.views.CustomBackend',
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+SITE_ID = 1
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+LOGIN_REDIRECT_URL='/social-login-token/'
+
+
+#JWT登录
+import datetime
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),
+    'JWT_RESPONSE_PAYLOAD_HANDLER':'users.serializers.serializer_v1.jwt_response_payload_handler'
 }
-STATIC_ROOT=os.path.join(BASE_DIR,'static')
+
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
+
+REST_FRAMEWORK = {
+    # 权限认证
+    'DEFAULT_PERMISSION_CLASSES': (
+        #'rest_framework.permissions.IsAuthenticated',
+    ),
+    # 身份验证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+    'DEFAULT_PAGINATION_CLASS':'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE':10
+}
+
+
+AUTH_USER_MODEL="users.UserProfile"
+
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+MEDIA_URL='/media/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.ioboom.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'ioboom@ioboom.com'
+EMAIL_HOST_PASSWORD = os.environ.get('ALI_MAIL_PASSWD')
+EMAIL_FROM = 'ioBoom.com管理员<ioboom@ioboom.com>'
+DEFAULT_FROM_EMAIL =EMAIL_FROM
+
+
+

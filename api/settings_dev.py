@@ -144,7 +144,7 @@ SITE_ID = 1
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-LOGIN_REDIRECT_URL='/doc/'
+LOGIN_REDIRECT_URL='/social-login-token/'
 
 
 #JWT登录
@@ -189,3 +189,20 @@ EMAIL_HOST_PASSWORD = os.environ.get('ALI_MAIL_PASSWD')
 EMAIL_FROM = 'ioBoom.com管理员<ioboom@ioboom.com>'
 DEFAULT_FROM_EMAIL =EMAIL_FROM
 
+
+# Database
+# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+MYSQL_PASSWORD=os.environ.get('MYSQL_PASSWORD')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',
+        'NAME': 'api',
+        'USER': 'root',
+        'PASSWORD':MYSQL_PASSWORD ,
+        'PORT': '3306',
+         'OPTIONS':{'init_command':'SET default_storage_engine=INNODB;'}
+   }
+}

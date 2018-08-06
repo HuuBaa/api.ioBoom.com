@@ -17,7 +17,7 @@ class UserJWTSerializer(serializers.ModelSerializer):
     avatar_url = serializers.SerializerMethodField()
     class Meta:
         model=UserProfile
-        fields=('username','avatar','avatar_url')
+        fields=('id','username','avatar','avatar_url')
     def get_avatar_url(self,user):
         if user.socialaccount_set.count():
             return user.socialaccount_set.all()[0].get_avatar_url()

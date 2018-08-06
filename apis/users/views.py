@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+import os
 from rest_framework.viewsets import GenericViewSet
+from rest_framework.views import APIView
 from rest_framework.mixins import ListModelMixin,RetrieveModelMixin,CreateModelMixin,UpdateModelMixin
 from rest_framework.response import Response
-from rest_framework import status,pagination
+from rest_framework import status,pagination,permissions
 from rest_framework_jwt.serializers import jwt_payload_handler,jwt_encode_handler
 
 from django.core.mail import send_mail
@@ -12,6 +15,7 @@ from django.db.models import Q
 import random
 from .models import UserProfile,VerifyCode
 from .serializers.serializer_v1 import UserUpdateSerializer,UserProfileSerializer,UserRegisterSerializer,VerifyCodeSerializer,UserJWTSerializer
+from .serializers.serializer_v2 import UserProfileSerializer_v2
 from .permissions import IsOwnerOrReadOnly
 # Create your views here.
 
@@ -100,4 +104,28 @@ class VerifyCodeViewSet_v1(GenericViewSet,CreateModelMixin):
 
 
 
+#v2 api
+class UserProfileViewSet_v2(GenericViewSet,ListModelMixin,RetrieveModelMixin):
+    """
+    list:
+        全部用户列表
+    retrieve:
+        单个用户信息
+    """
+    queryset = UserProfile.objects.order_by("-id").all()
+    serializer_class = UserProfileSerializer_v2
 
+
+class SocialTokenView(APIView):
+    """
+    第三方登录后，跳转到这个url，可以获取到jwt token
+    """
+    permission_classes = (permissions.IsAuthenticated,)
+    def get(self,request):
+        user = request.user
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+        res_dict={}
+        res_dict["user"] = UserJWTSerializer(user, context={'request': request}).data
+        res_dict["token"] = token
+        return Response(res_dict, status=status.HTTP_201_CREATED)

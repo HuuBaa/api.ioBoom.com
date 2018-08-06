@@ -86,3 +86,16 @@ class ArticleDetailSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class SubCommentCreateSerializer(serializers.ModelSerializer):
+    author = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    class Meta:
+        model=Subcomment
+        exclude = ('post_time',)
+
+class CommentCreateSerializer(serializers.ModelSerializer):
+    author = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    class Meta:
+        model=Comment
+        exclude=('post_time',)
+
+

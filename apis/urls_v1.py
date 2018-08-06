@@ -16,7 +16,7 @@ router.register('code', VerifyCodeViewSet_v1,base_name="code_v1")
 router.register('tags', TagViewSet_v1,base_name="tags_v1")
 router.register('articles', ArticleViewSet_v1,base_name="articles_v1")
 router.register('comments', CommentViewSet_v1,base_name="comments_v1")
-router.register('subcomments', SubCommentViewSet_v1,base_name="subcomments")
+router.register('subcomments', SubCommentViewSet_v1,base_name="subcomments_v1")
 
 urlpatterns = [
     path('v1/', include(router.urls))

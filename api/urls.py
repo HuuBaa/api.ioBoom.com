@@ -20,6 +20,7 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework_jwt.views import obtain_jwt_token
+from users.views import SocialTokenView
 
 urlpatterns = [
     path('admin/',admin.site.urls),
@@ -28,8 +29,10 @@ urlpatterns = [
     path('doc/',include_docs_urls(title="Huu Api")),
     path('', include('apis.urls')),
     path('', include('apis.urls_v1')),
+    path('', include('apis.urls_v2')),
     path('api-jwt-auth/',obtain_jwt_token),
-    path(r'accounts/', include('allauth.urls')),
+    path('accounts/', include('allauth.urls')),
+    path('social-login-token/',SocialTokenView.as_view())
 ]
 
 if settings.DEBUG:
