@@ -99,7 +99,7 @@ class VerifyCodeViewSet_v1(GenericViewSet,CreateModelMixin):
         code_record = VerifyCode(code=code, email=serializer.validated_data["email"])
         code_record.save()
         return Response({
-            "email": code_record.email,
+            "email": "邮件已经发送到"+code_record.email,
         }, status=status.HTTP_201_CREATED)
 
 

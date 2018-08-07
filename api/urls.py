@@ -15,6 +15,7 @@ Including another URLconf
 """
 import xadmin
 from django.contrib import admin
+from django.views.generic import RedirectView
 from rest_framework.documentation import include_docs_urls
 from django.urls import path, include, re_path
 from django.conf import settings
@@ -32,7 +33,8 @@ urlpatterns = [
     path('', include('apis.urls_v2')),
     path('api-jwt-auth/',obtain_jwt_token),
     path('accounts/', include('allauth.urls')),
-    path('social-login-token/',SocialTokenView.as_view())
+    path('social-login-token/',SocialTokenView.as_view()),
+    path('',RedirectView.as_view(url='/v1/'))
 ]
 
 if settings.DEBUG:

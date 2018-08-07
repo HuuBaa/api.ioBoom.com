@@ -36,6 +36,7 @@ class Tag(models.Model):
     name=models.CharField(max_length=32,unique=True,verbose_name="标签名",help_text="标签名")
     chinese_name=models.CharField(blank=True,null=True,max_length=32,verbose_name="标签中文名",help_text="标签中文名")
     slug=models.SlugField(blank=True,unique=True,verbose_name="标签slug",help_text="标签slug")
+    desc=models.CharField(max_length=128,blank=True,null=True,verbose_name="标签描述",help_text="标签描述")
 
     def save(self, *args, **kw):
         self.slug = slugify(self.name)

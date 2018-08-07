@@ -36,7 +36,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model=UserProfile
-        fields=('id','username','email','avatar','age','birthday','website','hometown','introduction','avatar_url')
+        fields=('id','username','avatar','age','birthday','website','hometown','introduction','avatar_url')
 
     def get_avatar_url(self,user):
         if user.socialaccount_set.count():

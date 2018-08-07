@@ -16,7 +16,7 @@ class UserProfileSerializer_v2(serializers.HyperlinkedModelSerializer):
     avatar_url=serializers.SerializerMethodField()
     class Meta:
         model=UserProfile
-        fields=('id','username','email','avatar','age','birthday','website','hometown','introduction','avatar_url','articles','sub_comments','comments')
+        fields=('id','username','avatar','age','birthday','website','hometown','introduction','avatar_url','articles','sub_comments','comments')
 
     def get_avatar_url(self,user):
         if user.socialaccount_set.count():
