@@ -33,10 +33,12 @@ def jwt_response_payload_handler(token, user=None, request=None):
 
 class UserProfileSerializer(serializers.ModelSerializer):
     avatar_url=serializers.SerializerMethodField()
-
+    articles = serializers.HyperlinkedRelatedField(view_name="articles_v1-detail", read_only=True, many=True)
+    sub_comments = serializers.HyperlinkedIdentityField(view_name="subcomments_v1-detail", read_only=True, many=True)
+    comments = serializers.HyperlinkedRelatedField(view_name="comments_v1-detail", read_only=True, many=True)
     class Meta:
         model=UserProfile
-        fields=('id','username','avatar','age','birthday','website','hometown','introduction','avatar_url')
+        fields=('id','username','avatar','age','birthday','website','hometown','introduction','avatar_url','articles','comments','sub_comments')
 
     def get_avatar_url(self,user):
         if user.socialaccount_set.count():

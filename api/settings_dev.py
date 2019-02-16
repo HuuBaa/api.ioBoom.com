@@ -190,19 +190,3 @@ EMAIL_FROM = 'ioBoom.com管理员<ioboom@ioboom.com>'
 DEFAULT_FROM_EMAIL =EMAIL_FROM
 
 
-# Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
-MYSQL_PASSWORD=os.environ.get('MYSQL_PASSWORD')
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': '127.0.0.1',
-        'NAME': 'api',
-        'USER': 'root',
-        'PASSWORD':MYSQL_PASSWORD ,
-        'PORT': '3306',
-         'OPTIONS':{'init_command':'SET default_storage_engine=INNODB;'}
-   }
-}

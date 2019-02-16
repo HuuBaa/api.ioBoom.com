@@ -135,7 +135,7 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+
 
 AUTHENTICATION_BACKENDS=(
     'users.views.CustomBackend',
@@ -176,6 +176,10 @@ REST_FRAMEWORK = {
     'PAGE_SIZE':10
 }
 
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
+STATIC_ROOT=STATIC_DIR
+STATIC_URL = '/static/'
 
 AUTH_USER_MODEL="users.UserProfile"
 

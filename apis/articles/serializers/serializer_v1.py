@@ -52,6 +52,7 @@ class ArticleListSerializer(serializers.ModelSerializer):
 class SubCommentListSerializer(serializers.ModelSerializer):
     author = AuthorSerializer()
     reply_to=AuthorSerializer()
+    article = serializers.HyperlinkedRelatedField(view_name="articles_v1-detail", read_only=True)
     class Meta:
         model=Subcomment
         fields="__all__"
@@ -59,6 +60,7 @@ class SubCommentListSerializer(serializers.ModelSerializer):
 class CommentListSerializer(serializers.ModelSerializer):
     author = AuthorSerializer()
     sub_comments=SubCommentListSerializer(many=True)
+    article = serializers.HyperlinkedRelatedField(view_name="articles_v1-detail", read_only=True)
     class Meta:
         model=Comment
         fields="__all__"
